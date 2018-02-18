@@ -22,3 +22,9 @@ export DOCKER_BIN_PATH="${HOME}/.docker-bin"
 if [[ -r "${DOCKER_BIN_PATH}" ]] && [[ -d "${DOCKER_BIN_PATH}" ]]; then
   export PATH="${DOCKER_BIN_PATH}:${PATH}"
 fi
+
+export NVM_DIR="${HOME}/.nvm"
+if [[ -d "$NVM_DIR" ]] && [[ -r "${NVM_DIR}/nvm.sh" ]]; then
+	# shellcheck source=/dev/null
+  source "${NVM_DIR}/nvm.sh"
+fi
