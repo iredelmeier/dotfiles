@@ -13,6 +13,11 @@ if [[ -r "${CARGO_BIN_PATH}" ]] && [[ -d "${CARGO_BIN_PATH}" ]]; then
   export PATH="${CARGO_BIN_PATH}:${PATH}"
 fi
 
+if command -v rustc; then
+  RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+  export RUST_SRC_PATH
+fi
+
 export DOCKER_BIN_PATH="${HOME}/.docker-bin"
 if [[ -r "${DOCKER_BIN_PATH}" ]] && [[ -d "${DOCKER_BIN_PATH}" ]]; then
   export PATH="${DOCKER_BIN_PATH}:${PATH}"
