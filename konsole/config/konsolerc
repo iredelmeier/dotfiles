@@ -1,0 +1,24 @@
+[Desktop Entry]
+DefaultProfile=tomorrow night.profile
+
+[Favorite Profiles]
+Favorites=tomorrow night.profile
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+Height 240=197
+Height 480=857
+Height 900=857
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABjwAAANZAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1600=1596
+Width 320=156
+Width 640=1596
+
+[TabBar]
+TabBarPosition=Top
+TabBarVisibility=ShowTabBarWhenNeeded
