@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Used for config shared across both bash and zsh
+
+find "${HOME}/.dotfiles" -type f -follow -print0 | while IFS= read -rd $'\0' file; do
+  if [[ -r "$file" ]]; then
+    # shellcheck source=/dev/null
+    source "$file"
+  fi
+done
+
+if [[ -r "/usr/share/autojump/autojump.sh" ]]; then
+	# shellcheck source=/dev/null
+	source /usr/share/autojump/autojump.sh
+fi

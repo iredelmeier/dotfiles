@@ -1,0 +1,14 @@
+.agignore
+.envrc
+.idea
+
+*.o
+*.a
+*.so
+*.pyc
+
+*.log
+
+Session.vim
+
+tags

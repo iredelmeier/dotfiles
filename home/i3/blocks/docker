@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -eu
+
+function main() {
+  local status
+  local num_lines
+  local num_containers
+
+  status="$(docker ps)"
+  num_lines="$(echo "${status}" | wc -l)"
+  num_containers="$(("${num_lines}" - 1))"
+
+  echo "$num_containers"
+}
+
+main
