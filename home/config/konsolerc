@@ -1,8 +1,8 @@
 [Desktop Entry]
-DefaultProfile=tomorrow night.profile
+DefaultProfile=
 
 [Favorite Profiles]
-Favorites=tomorrow night.profile
+Favorites=
 
 [KonsoleWindow]
 ShowMenuBarByDefault=false
@@ -24,6 +24,9 @@ Width 2560=1910
 Width 3840=3830
 Width 5120=2550
 Width 7680=2550
+
+[Profile Shortcuts]
+Ctrl+Shift+C[$d]
 
 [TabBar]
 TabBarPosition=Top
