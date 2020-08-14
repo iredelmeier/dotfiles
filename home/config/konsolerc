@@ -1,0 +1,26 @@
+[Desktop Entry]
+DefaultProfile=tomorrow night.profile
+
+[Favorite Profiles]
+Favorites=tomorrow night.profile
+
+[KonsoleWindow]
+SaveGeometryOnExit=false
+ShowMenuBarByDefault=false
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA7oAAAHjAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+
+[PrintOptions]
+PrinterFriendly=true
+ScaleOutput=true
+
+[Profile Shortcuts]
+Ctrl+Shift+C[$d]
+
+[TabBar]
+TabBarPosition=Top
+TabBarVisibility=ShowTabBarWhenNeeded

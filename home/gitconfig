@@ -20,3 +20,6 @@
 [user]
   email = iredelmeier@gmail.com
   name = Isobel Redelmeier
+
+[commit]
+  ; gpgsign = true

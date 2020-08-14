@@ -1,0 +1,15 @@
+#!/bin/bash
+
+CWD="$(dirname "${BASH_SOURCE[0]-$0}")"
+
+for file in "${CWD}/"*; do
+  if [[ -r "$file" ]] && [[ -f "$file" ]] && [[ "$file" != "${BASH_SOURCE[0]-$0}" ]]; then
+    # shellcheck source=/dev/null
+    source "$file"
+  fi
+done
+
+if [[ -r "/usr/share/autojump/autojump.sh" ]]; then
+  # shellcheck source=/dev/null
+  source /usr/share/autojump/autojump.sh
+fi

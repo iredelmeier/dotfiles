@@ -13,8 +13,10 @@ if [[ $(command -v nvim) ]]; then
 fi
 
 if [[ $(command -v xclip) ]]; then
-  alias pbcopy="xclip -selection clipboard"
-  alias pbpaste="xclip -selection clipboard -o"
+  alias copy="xclip -selection clipboard"
+  alias pbcopy="copy"
+  alias paste="xclip -selection clipboard -o"
+  alias pbpaste="pbpaste"
 fi
 
 if [[ $(command -v xdg-open) ]]; then
