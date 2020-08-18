@@ -1,5 +1,8 @@
 #!/bin/bash
 
+exec >> /tmp/badx.log
+exec 2>&1
+
 # shellcheck source=/dev/null
 "${HOME}/.xsession"
 
