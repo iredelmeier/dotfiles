@@ -15,3 +15,5 @@ tags
 
 .ignore
 *.dump
+celerybeat-schedule.db
+.vimrc.local

@@ -53,3 +53,17 @@ _clid() {
 if [[ "$(basename -- ${(%):-%x})" != "_clid" ]]; then
   compdef _clid clid
 fi
+#compdef clid
+_clid() {
+  eval $(env COMMANDLINE="${words[1,$CURRENT]}" _CLID_COMPLETE=complete-zsh  clid)
+}
+if [[ "$(basename -- ${(%):-%x})" != "_clid" ]]; then
+  compdef _clid clid
+fi
+#compdef clid
+_clid() {
+  eval $(env COMMANDLINE="${words[1,$CURRENT]}" _CLID_COMPLETE=complete-zsh  clid)
+}
+if [[ "$(basename -- ${(%):-%x})" != "_clid" ]]; then
+  compdef _clid clid
+fi

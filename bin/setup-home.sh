@@ -4,9 +4,6 @@ set -eu
 
 TARGET="${TARGET:-"$HOME"}"
 
-rm -rf /tmp/foo
-mkdir -p /tmp/foo
-
 cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/../home"
 
 find . -type f -print0 | while IFS= read -rd $'\0' path; do
