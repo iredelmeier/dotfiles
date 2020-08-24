@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/snap/bin"
+export PATH="${HOME}/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/snap/bin"
 
 CARGO_BIN_PATH="${HOME}/.cargo/bin"
 if [[ -r "$CARGO_BIN_PATH" ]] && [[ -d "$CARGO_BIN_PATH" ]]; then

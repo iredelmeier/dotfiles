@@ -1,9 +1,9 @@
 #!/bin/bash
 
-exec >> /tmp/badx.log
-exec 2>&1
+# exec >> /tmp/badx.log
+# exec 2>&1
 
-# shellcheck source=/dev/null
+shellcheck source=/dev/null
 "${HOME}/.xsession"
 
-exec i3-with-shmlog
+# exec i3-with-shmlog
