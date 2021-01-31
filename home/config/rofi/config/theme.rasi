@@ -1,0 +1,174 @@
+/**
+  Tomorrow night theme
+**/
+{
+    background: rgba( 29, 31, 33, 100% );
+    current-line: rgba( 40, 42, 46, 100% );
+    selection: rgba( 55, 59, 65, 100% );
+    foreground: rgba( 197, 200, 198, 100% );
+    comment: rgba( 150, 152, 150, 100% );
+    red: rgba( 204, 102, 102, 100% );
+    orange: rgba( 222, 147, 95, 100% );
+    yellow: rgba( 240, 198, 116, 100% );
+    green: rgba( 181, 189, 104, 100% );
+    aqua: rgba( 138, 190, 183, 100% );
+    blue: rgba( 129, 162, 190, 100% );
+    purple: rgba( 178, 148, 187, 100% );
+
+    separatorcolor:              var(selection);
+    spacing:                     2;
+
+    border-color:                var(foreground);
+
+    normal-foreground:           var(foreground);
+    normal-background:           var(background);
+    active-foreground:           var(purple);
+    active-background:           var(background);
+    urgent-foreground:           var(red);
+    urgent-background:           var(background);
+
+    selected-normal-foreground:  var(background);
+    selected-normal-background:  var(aqua);
+    selected-active-foreground:  var(background);
+    selected-active-background:  var(purple);
+    selected-urgent-foreground:  var(background);
+    selected-urgent-background:  var(red);
+
+    alternate-normal-foreground: var(normal-foreground);
+    alternate-normal-background: var(normal-background);
+    alternate-active-foreground: var(active-foreground);
+    alternate-active-background: var(active-background);
+    alternate-urgent-foreground: var(urgent-foreground);
+    alternate-urgent-background: var(urgent-background);
+}
+
+window {
+    background-color: var(background);
+    padding:          var(spacing);
+    border:           var(spacing);
+}
+
+mainbox {
+    padding: 0;
+    border:  0;
+    background-color: var(background);
+}
+
+message {
+    padding:      2px ;
+    border-color: var(separatorcolor);
+    border:       2px 0 0;
+}
+
+textbox {
+    text-color: var(foreground);
+}
+
+listview {
+    padding:      2px solid 0px 0px ;
+    scrollbar:    true;
+    border-color: var(separatorcolor);
+    spacing:      2px ;
+    fixed-height: 0;
+    border:       2px solid 0 0 ;
+    background-color: var(background);
+}
+
+element {
+    padding: 2px ;
+    border:  0;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: var(normal-background);
+    text-color:       var(normal-foreground);
+}
+
+element normal.urgent {
+    background-color: var(urgent-background);
+    text-color:       var(urgent-foreground);
+}
+
+element normal.active {
+    background-color: var(active-background);
+    text-color:       var(active-foreground);
+}
+
+element selected.normal {
+    background-color: var(selected-normal-background);
+    text-color:       var(selected-normal-foreground);
+}
+
+element selected.urgent {
+    background-color: var(selected-urgent-background);
+    text-color:       var(selected-urgent-foreground);
+}
+
+element selected.active {
+    background-color: var(selected-active-background);
+    text-color:       var(selected-active-foreground);
+}
+
+element alternate.normal {
+    background-color: var(alternate-normal-background);
+    text-color:       var(alternate-normal-foreground);
+}
+
+element alternate.urgent {
+    background-color: var(alternate-urgent-background);
+    text-color:       var(alternate-urgent-foreground);
+}
+
+element alternate.active {
+    background-color: var(alternate-active-background);
+    text-color:       var(alternate-active-foreground);
+}
+
+scrollbar {
+    width:        4px ;
+    padding:      0;
+    handle-width: 8px ;
+    border:       0;
+    handle-color: var(selection);
+    background-color: var(current-line);
+}
+
+sidebar {
+    border: 2px 0 0;
+    border-color: var(separatorcolor);
+}
+
+inputbar {
+    padding:    1px ;
+    padding: 2px;
+    text-color: var(normal-foreground);
+    background-color: var(current-line);
+    children:   [ prompt,textbox-prompt-sep,entry,case-indicator ];
+}
+
+case-indicator,
+entry,
+prompt,
+button {
+    spacing:    0;
+    text-color: var(normal-foreground);
+    background-color: var(current-line);
+}
+
+button selected {
+    text-color:       var(selected-normal-foreground);
+    background-color: var(selected-normal-background);
+}
+
+textbox-prompt-sep {
+    expand: false;
+    str: ":";
+    text-color: var(normal-foreground);
+    background-color: var(current-line);
+    margin: 0 0.3em 0 0;
+}
+
+error-message {
+    background-color: var(normal-background);
+    text-color:       var(red);
+}

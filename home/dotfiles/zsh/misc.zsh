@@ -18,3 +18,6 @@ setopt long_list_jobs
 
 # scripts and functions
 setopt multios
+
+# please be quiet terminal
+unsetopt BEEP

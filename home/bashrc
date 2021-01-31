@@ -28,7 +28,7 @@ function main() {
   cwd="$(dirname "${BASH_SOURCE[0]}")"
 
   # shellcheck source=/dev/null
-  source "${cwd}/.dotfiles/shellrc"
+  source "${cwd}/.dotfiles/shellrc.sh"
 }
 
 main

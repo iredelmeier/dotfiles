@@ -1,4 +1,5 @@
 Xft.dpi: 192
+! Xft.dpi: 288
 Xcursor.theme: Pop
 Xcursor.size: 64
 Urxvt.font: xft:pango:pixelsize=64:antialias=true:hinting=full

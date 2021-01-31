@@ -2,7 +2,7 @@
 
 # Settings shared with bash
 # shellcheck source=/dev/null
-source "${HOME}/.dotfiles/shellrc"
+source "${HOME}/.dotfiles/shellrc.sh"
 
 for file in "${HOME}/.dotfiles/zsh/"*; do
   if [[ -r "${file}" ]] && [[ -f "${file}" ]]; then

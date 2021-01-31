@@ -1,6 +1,10 @@
 [Desktop Entry]
 DefaultProfile=tomorrow night.profile
 
+[DownloadDialog Settings]
+Height 1080=411
+Width 1920=700
+
 [Favorite Profiles]
 Favorites=tomorrow night.profile
 

@@ -1,52 +1,79 @@
 [Background]
 Color=29,31,33
 
+[BackgroundFaint]
+Color=29,31,33
+
 [BackgroundIntense]
-Color=invalid
+Color=255,255,255
 
 [Color0]
+Color=0,0,0
+
+[Color0Faint]
 Color=0,0,0
 
 [Color0Intense]
 Color=102,102,102
 
 [Color1]
-Color=145,34,38
+Color=164,81,81
+
+[Color1Faint]
+Color=164,81,81
 
 [Color1Intense]
 Color=204,102,102
 
 [Color2]
-Color=119,137,0
+Color=143,149,82
+
+[Color2Faint]
+Color=143,149,82
 
 [Color2Intense]
 Color=181,189,104
 
 [Color3]
-Color=174,123,0
+Color=200,164,96
+
+[Color3Faint]
+Color=200,164,96
 
 [Color3Intense]
 Color=240,198,116
 
 [Color4]
-Color=29,37,148
+Color=102,128,150
+
+[Color4Faint]
+Color=102,128,150
 
 [Color4Intense]
 Color=129,162,190
 
 [Color5]
-Color=104,42,155
+Color=139,116,147
+
+[Color5Faint]
+Color=139,116,147
 
 [Color5Intense]
 Color=178,148,187
 
 [Color6]
-Color=43,102,81
+Color=109,150,144
+
+[Color6Faint]
+Color=109,150,144
 
 [Color6Intense]
 Color=138,190,183
 
 [Color7]
+Color=146,149,147
+
+[Color7Faint]
 Color=146,149,147
 
 [Color7Intense]
@@ -55,10 +82,15 @@ Color=236,235,236
 [Foreground]
 Color=197,200,198
 
+[ForegroundFaint]
+Color=197,200,198
+
 [ForegroundIntense]
 Color=255,255,255
 
 [General]
-Description=Tomorrow
+Blur=false
+ColorRandomization=false
+Description=Tomorrow Night
 Opacity=1
 Wallpaper=
