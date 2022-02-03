@@ -18,3 +18,5 @@ tags
 celerybeat-schedule.db
 .vimrc.local
 target.docker
+target
+_build.docker

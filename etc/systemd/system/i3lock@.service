@@ -1,15 +1,17 @@
-m i3lock on commputer sleep
+# i3lock on commputer sleep
 [Unit]
 Description=i3lock
 Documentation=https://bbs.archlinux.org/viewtopic.php?pid=1170536#p1170536
 Documentation=https://wiki.debian.org/ScreenLockingOnSleep
-Before=suspend.target
+Before=sleep.target
 
 [Service]
 User=%I
 Type=simple
+; Type=forking
 Environment=DISPLAY=:1
 ExecStart=/usr/bin/i3lock -c 111111 -n
+; ExecStart=/usr/bin/i3lock -c 111111
 
 [Install]
-WantedBy=suspend.target
+WantedBy=sleep.target

@@ -1,7 +1,7 @@
 Xft.dpi: 192
 ! Xft.dpi: 288
 Xcursor.theme: Pop
-Xcursor.size: 64
+Xcursor.size: 48
 Urxvt.font: xft:pango:pixelsize=64:antialias=true:hinting=full
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault

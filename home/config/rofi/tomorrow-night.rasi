@@ -1,7 +1,8 @@
+/* { */
 /**
-  Tomorrow night theme
-**/
-{
+ * Rofi version: 1.5.4
+ **/
+* {
     background: rgba( 29, 31, 33, 100% );
     current-line: rgba( 40, 42, 46, 100% );
     selection: rgba( 55, 59, 65, 100% );

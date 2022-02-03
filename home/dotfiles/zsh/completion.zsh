@@ -1,5 +1,9 @@
 # Adapted from oh-my-zsh
 
+if [[ -d "${HOME}/workspace/asdf-vm/asdf/completions" ]]; then
+  fpath=("${HOME}/workspace/asdf-vm/asdf/completions" $fpath)
+fi
+
 zmodload -i zsh/complist
 autoload -U compaudit compinit
 

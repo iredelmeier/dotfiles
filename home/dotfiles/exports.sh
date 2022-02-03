@@ -23,7 +23,7 @@ if [[ ! "${PAGER}" ]]; then
   export PAGER="less"
 fi
 
-export FZF_DEFAULT_COMMAND='ag -fg ""'
+export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_R_OPTS="-e"
 
 export GOPATH="${HOME}/workspace/go"
@@ -35,8 +35,13 @@ if command -v rustc > /dev/null; then
 fi
 
 if [[ -z "$SSH_AUTH_SOCK" ]]; then
-  eval "$(ssh-agent -s)" > /dev/null
-  ssh-add -q
+  echo "lalala"
+  echo "hello $(env | ag ssh)"
+  # eval "$(ssh-agent -s)" > /dev/null
+  # ssh-add -q
+  # echo "hello $(env | ag ssh)"
+else
+  echo "bloop"
 fi
 # SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 # if [[ -n "$SSH_AUTH_SOCK" ]]; then
