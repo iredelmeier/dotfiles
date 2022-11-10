@@ -20,8 +20,8 @@
 [user]
   email = iredelmeier@gmail.com
   name = Isobel Redelmeier
-
+  signingkey = F2D647B6DA04BA3B!
 [commit]
-  ; gpgsign = true
+  gpgsign = true
 [init]
   defaultBranch = main
