@@ -1,7 +1,7 @@
 # Adapted from oh-my-zsh
 
 zmodload -i zsh/complist
-autoload -U compaudit compinit
+autoload -Uz compaudit compinit
 
 setopt always_to_end
 setopt auto_list

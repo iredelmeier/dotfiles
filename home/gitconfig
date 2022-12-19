@@ -17,11 +17,16 @@
 [push]
   default = simple
 
+[fetch]
+	prune = true
+  signingkey = F2D647B6DA04BA3B!
+
+[commit]
+  gpgsign = true
+
+[init]
+  defaultBranch = main
+
 [user]
   email = iredelmeier@gmail.com
   name = Isobel Redelmeier
-  signingkey = F2D647B6DA04BA3B!
-[commit]
-  gpgsign = true
-[init]
-  defaultBranch = main
