@@ -40,7 +40,12 @@ if [[ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]]; then
 	fi
 fi
 
-export FZF_DEFAULT_COMMAND='ag -g ""'
+if command -v rg > /dev/null; then
+  export RIPGREP_CONFIG_PATH="${HOME}/.ripgreprc"
+  export FZF_DEFAULT_COMMAND="rg --files --hidden --glob \"!.git\""
+elif command -v ag > /dev/null; then
+  export FZF_DEFAULT_COMMAND='ag -g ""'
+fi
 export FZF_CTRL_R_OPTS="-e"
 
 export GOPATH="${HOME}/workspace/go"

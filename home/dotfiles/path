@@ -19,3 +19,19 @@ if [[ -r "$GO_CORE_PATH" ]] && [[ -d "$GO_CORE_PATH" ]]; then
     export PATH="${GO_BIN_PATH}:${PATH}"
   fi
 fi
+
+# Yes, this may have some redundancy with $PYTHON_VENV_PATH
+# ...and is therefore largely (or completely?) unnecessary
+PYTHON_BREW_PATH="$(brew --prefix python)/libexec/bin"
+if [[ -r "$PYTHON_BREW_PATH" ]] && [[ -d "$PYTHON_BREW_PATH" ]]; then
+  export PATH="${PYTHON_BREW_PATH}:${PATH}"
+fi
+
+# Must have higher priority than $PYTHON_BREW_PATH to ensure that
+# it uses the "global" virtualenv when not in a project-specific one
+PYTHON_VENV_PATH="${HOME}/.local/venv/bin"
+if [[ -r "$PYTHON_VENV_PATH" ]] && [[ -d "$PYTHON_VENV_PATH" ]]; then
+  export PATH="${PYTHON_VENV_PATH}:${PATH}"
+fi
+
+

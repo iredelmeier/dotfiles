@@ -22,7 +22,7 @@
   signingkey = F2D647B6DA04BA3B!
 
 [commit]
-  gpgsign = true
+  gpgsign = false
 
 [init]
   defaultBranch = main

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-alias ls="ls --color=tty"
-alias ll="ls -lh"
-alias la="ls -lAh"
+alias ls="ls -H --color=tty"
+alias ll="ls -lhH"
+alias la="ls -lAhH"
 
 if echo | grep -q --color=tty ""; then
   alias grep="grep --color=tty"
