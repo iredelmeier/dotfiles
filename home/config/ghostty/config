@@ -1,0 +1,10 @@
+theme = Tomorrow Night Bright
+adjust-cell-width = -20%
+adjust-cell-height = -30%
+font-family = OpenDyslexicMono
+font-size = 18
+unfocused-split-opacity = 0.8
+unfocused-split-fill = FFFFFF
+macos-titlebar-proxy-icon = hidden
+cursor-style = bar
+cursor-style-blink = false
